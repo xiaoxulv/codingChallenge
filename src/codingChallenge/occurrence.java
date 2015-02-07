@@ -24,7 +24,7 @@ public class occurrence {
 		while(left <= right){
 			int mid = left + (right - left)/2;
 			if(a[mid] > target)
-				mid = mid - 1;
+				right = mid - 1;
 			if(a[mid] <= target)
 				left = mid + 1;
 			if(a[right] == target)
@@ -34,7 +34,7 @@ public class occurrence {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a[] ={3,3,3,3,3};
+		int a[] ={1,2,3,3,3,3,4,4,4,5};
 		System.out.println(occur(a,3));
 	}
 
