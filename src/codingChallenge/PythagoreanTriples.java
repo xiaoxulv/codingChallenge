@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 public class PythagoreanTriples {
+	// O(n) in space not best here
+	// compare to two sum problem
 	public static List<List<Integer>> findPyTri(int num[]){
 		List<Integer> in = new ArrayList<Integer>();
 		List<List<Integer>> out = new ArrayList<List<Integer>>();
