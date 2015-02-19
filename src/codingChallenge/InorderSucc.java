@@ -61,6 +61,7 @@ public class InorderSucc {
 		a.left = c;
 		b.right = d;
 		System.out.println(insucc(root, c).val);
+		System.out.println(insuccBST(root, c).val);
 	}
 
 }
